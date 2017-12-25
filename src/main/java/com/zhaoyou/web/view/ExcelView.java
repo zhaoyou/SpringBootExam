@@ -1,4 +1,4 @@
-package com.zhaoyou.web;
+package com.zhaoyou.web.view;
 
 import com.zhaoyou.domain.User;
 import org.apache.poi.hssf.util.HSSFColor;

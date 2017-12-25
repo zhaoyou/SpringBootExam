@@ -1,4 +1,4 @@
-package com.zhaoyou.web;
+package com.zhaoyou.web.view;
 
 import org.springframework.web.servlet.view.AbstractView;
 

@@ -1,4 +1,4 @@
-package com.zhaoyou.web;
+package com.zhaoyou.web.view;
 
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
