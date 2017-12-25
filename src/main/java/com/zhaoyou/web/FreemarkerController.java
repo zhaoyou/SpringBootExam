@@ -23,4 +23,11 @@ public class FreemarkerController {
         return "welcome";
     }
 
+    @RequestMapping(value = "/f/1")
+    public String toTest(Model model) {
+        model.addAttribute("time", new Date());
+        model.addAttribute("message", this.message);
+        return "hello";
+    }
+
 }

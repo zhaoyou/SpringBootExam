@@ -6,15 +6,7 @@
 </head>
 
 <body>
-<p>
-Date: ${time?date}
-</p>
-<br>
-<p>
-Time: ${time?time}
-</p>
-<br>
-Message: ${message}
+<h3>Hello world</h3>
 </body>
 <script src="/js/index.js"/></script
 </html>

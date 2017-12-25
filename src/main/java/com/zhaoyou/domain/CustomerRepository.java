@@ -36,6 +36,26 @@ public class CustomerRepository {
         });
     }
 
+    public List<User> getUserList() {
+        return jdbcTemplate.query("select * from Users;", new RowMapper<User>() {
+            @Override
+            public User mapRow(ResultSet rs, int i) throws SQLException {
+                User user = new User();
+                user.setAddress(rs.getString("address"));
+                user.setAge(rs.getString("age"));
+                user.setCity(rs.getString("city"));
+                user.setCompany(rs.getString("company"));
+                user.setCountry(rs.getString("country"));
+                user.setFirstName(rs.getString("firstName"));
+                user.setLastName(rs.getString("lastName"));
+                user.setJobTitle(rs.getString("jobTitle"));
+                user.setPhoneNumber(rs.getString("phoneNumber"));
+                return user;
+            }
+        });
+    }
+
+
 
 
     @Autowired
