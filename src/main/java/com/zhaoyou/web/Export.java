@@ -31,4 +31,10 @@ public class Export {
         model.addAttribute("users", repository.getUserList());
         return new ModelAndView(new PdfView());
     }
+
+    @RequestMapping(value = "/download/csv", method = RequestMethod.GET)
+    public ModelAndView downloadCsv(Model model) {
+        model.addAttribute("users", repository.getUserList());
+        return new ModelAndView(new CsvView());
+    }
 }
