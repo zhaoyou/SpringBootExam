@@ -110,6 +110,14 @@
             <version>2.4.0</version>
         </dependency>
 
+        <!-- for webservice cxf-->
+        <!-- CXF webservice -->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-spring-boot-starter-jaxws</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+        <!-- CXF webservice -->
 
 
         <!--for test-->
